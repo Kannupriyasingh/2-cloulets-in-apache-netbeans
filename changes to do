@@ -1,0 +1,21 @@
+import org.cloudbus.cloudsim.CloudletSchedulerSpaceShared;
+
+
+
+
+
+
+ Vm vm = new Vm(vmid, brokerId, mips, pesNumber, ram, bw, size, vmm, new CloudletSchedulerSpaceShared());
+
+
+
+
+
+
+id++;
+Cloudlet cloudlet1 = new Cloudlet(id, length, pesNumber, fileSize, outputSize, utilizationModel, utilizationModel, utilizationModel);
+cloudlet1.setUserId(brokerId);
+cloudlet1.setVmId(vmid);
+
+// add the cloudlet to the list
+cloudletList.add(cloudlet1);
